@@ -1,3 +1,9 @@
+body{
+    font-family: "Montserrat";
+}
+
+/* Header */
+
 .HeaderBackground{
     background-color: #E4E4E4;
     height: 80px;
@@ -43,4 +49,37 @@
 
 .HeaderBackground .navbar-nav{
     margin: auto!important;
+}
+
+.FooterBackground{
+    padding: 20px;
+    background-color: #E4E4E4;
+    box-shadow: 0px -15px 10px -18px #111;
+}
+
+.FooterLogo{
+    width: 250px;
+    height: 250px;
+}
+
+.LogoBorder{
+    border-right: 1px solid #FF5757;
+}
+
+.FooterIcons{
+    color: #FF5757;
+    font-size: 20px;
+}
+
+/* Footer */
+
+.FooterBackground a{
+    text-decoration: none;
+    color: black;
+    transition: 0.4s!important;
+}
+
+.FooterBackground a:hover{
+    color: #38B6FF;
+    transition: 0.4s!important;   
 }
