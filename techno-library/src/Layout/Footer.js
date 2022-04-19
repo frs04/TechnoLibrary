@@ -8,7 +8,7 @@ const Footer = () => {
             <div className='row'>
                 <div className='col-3 LogoBorder'>
                     <a href='/'>
-                        <img src='./images/Logo2.png' className='FooterLogo'/>
+                        <img src='./images/Logo2.png' className='FooterLogo' alt='Logo'/>
                     </a>
                 </div>
                 <div className='col-3 ms-5'>

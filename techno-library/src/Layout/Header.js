@@ -10,7 +10,7 @@ const Header = () => {
           <div className='row'>
             <div className='col-2'>
               <a href='/'>
-                <img src='./images/Logo1.png' className='logoimg'/>
+                <img src='./images/Logo1.png' className='logoimg' alt='Logo' />
               </a>
             </div>
             <div className='col-8'>
