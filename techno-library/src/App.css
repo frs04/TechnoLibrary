@@ -1,3 +1,12 @@
+:root {
+	--mainBlue: #38B6FF;
+	--mainPink: #FF5757;
+	--mainLightGrey: #E4E4E4;    
+	--mainDarkGrey: #999999;    
+	--mainBlack: #111;   
+    --mainWhite: #FFF ;
+}
+
 body{
     font-family: "Montserrat";
 }
@@ -5,9 +14,9 @@ body{
 /* Header */
 
 .HeaderBackground{
-    background-color: #E4E4E4;
+    background-color: var(--mainLightGrey);
     height: 80px;
-    box-shadow: 0px 15px 10px -18px #111;
+    box-shadow: 0px 15px 10px -18px var(--mainBlack);
 }
 
 .logoimg{
@@ -23,7 +32,7 @@ body{
     transition: 0.4s!important;
 }
 .HeaderNavbar .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover:hover{
-    color: #38B6FF;
+    color: var(--mainBlue);
     transition: 0.4s!important;
 }
 
@@ -39,11 +48,11 @@ body{
 
 .RightNav a{
     text-decoration: none;
-    color: black;
+    color: var(--mainBlack);
     transition: 0.4s!important;
 }
 .RightNav a:hover{
-    color: #38B6FF;
+    color: var(--mainBlue);
     transition: 0.4s!important;
 }
 
@@ -53,8 +62,8 @@ body{
 
 .FooterBackground{
     padding: 20px;
-    background-color: #E4E4E4;
-    box-shadow: 0px -15px 10px -18px #111;
+    background-color: var(--mainLightGrey);
+    box-shadow: 0px -15px 10px -18px var(--mainBlack);
 }
 
 .FooterLogo{
@@ -63,11 +72,11 @@ body{
 }
 
 .LogoBorder{
-    border-right: 1px solid #FF5757;
+    border-right: 1px solid var(--mainPink);
 }
 
 .FooterIcons{
-    color: #FF5757;
+    color: var(--mainPink);
     font-size: 20px;
 }
 
@@ -75,11 +84,196 @@ body{
 
 .FooterBackground a{
     text-decoration: none;
-    color: black;
+    color: var(--mainBlack);
     transition: 0.4s!important;
 }
 
 .FooterBackground a:hover{
-    color: #38B6FF;
+    color: var(--mainBlue);
     transition: 0.4s!important;   
+}
+
+/* Home */
+
+.HomeAuthor{
+    font-size: 15px;
+    color: var(--mainPink);
+    text-transform: uppercase;
+}
+
+.HomeBook{
+    font-size: 30px;
+    color: var(--mainPink);
+    text-transform: uppercase;
+}
+
+.HomeSliderBtn{
+    border: 0;
+    background-color: var(--mainBlue);
+    color: var(--mainLightGrey);
+    border-radius: 28px;
+    padding: 10px 20px;
+    transition: .4s;
+}
+
+.HomeSliderBtn:hover{
+    opacity: .6;
+    transition: .4s; 
+}
+
+#HomeCarousel .carousel-caption{
+    bottom: 35%!important;
+    left: 70%!important;
+}
+
+.TopLabel{
+    font-size: 25px;
+    color: var(--mainPink);
+    font-weight: 600;
+}
+
+.ViewAllBtn{
+    text-decoration: none;
+    color: var(--mainLightGrey);
+    background-color: var(--mainBlue);
+    border-radius: 28px;
+    padding: 7px 12px;
+    transition: .4s;
+}
+
+.ViewAllBtn:hover{
+    color: var(--mainLightGrey);
+    opacity: .6;
+    transition: .4s; 
+}
+
+#HomeOwl img, .HomeOwlStyle img{
+    width: 210px;
+    height: 310px;
+    cursor: pointer;
+}
+
+#HomeOwl .owl-prev{
+	position: absolute;
+    left: -45px;
+    top: 25%!important;
+    font-size: 55px!important;
+    color: var(--mainBlack)!important;
+    background: var(--mainWhite);
+}
+#HomeOwl .owl-prev:hover{
+    font-size: 55px!important;
+    color: var(--mainBlack)!important;
+    background: var(--mainWhite)!important;
+}
+#HomeOwl .owl-next{
+	position: absolute;
+    right: -25px;
+	top: 25%!important;
+    font-size: 55px!important;
+    color: var(--mainBlack)!important;
+    background: var(--mainWhite)!important;
+}
+
+#HomeOwl .owl-theme .owl-dots .owl-dot span{
+	border-radius: 0!important;
+}
+#HomeOwl .owl-theme .owl-prev{
+	font-size: 64px!important;
+	top: 30%!important;
+}
+#HomeOwl .owl-theme .owl-next{
+	font-size: 64px!important;
+	top: 30%!important;
+}
+
+.HomeOwlStyle{
+    position: relative;
+}
+
+.HomeOwlStyle .Category{
+    font-size: 15px;
+    color: var(--mainDarkGrey);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.HomeOwlStyle .Name{
+    font-size: 13px;
+    color: var(--mainBlack);
+    font-weight: 600;
+}
+
+.HomeOwlStyle .Stars li{
+    display: inline;
+}
+
+.HomeOwlStyle .Free{
+    font-size: 11px;
+    color: var(--mainPink);
+    font-weight: 600;
+}
+
+.HomeTop10{
+    position: relative;
+}
+
+.HomeTop10Info{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+}
+
+.ImgTop10{
+    border-radius: 28px;
+}
+
+.DisplayHover{
+    position: absolute;
+	bottom: 110px;
+	right: 30px;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+}
+
+.HomeOwlStyle:hover .DisplayHover{
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+}
+
+.DisplayHover button{
+    color: var(--mainPink);
+    background-color: transparent;
+    border: 0;
+    background-color: var(--mainLightGrey);
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.CenterTabs{
+    padding-left: 33%;
+    border: 0!important;
+}
+
+#HomeTabs .nav-tabs .nav-link, #HomeTabs .nav-tabs .nav-item.show .nav-link, #HomeTabs .nav-tabs .nav-link:hover, .nav-tabs .nav-link{
+    border: 0!important;
+}
+
+.nav-tabs .nav-link{
+    color: var(--mainBlack)!important;
+    font-size: 17px!important;
+    font-weight: 600!important;
+    border-bottom: 3px solid var(--mainPink)!important;
+    padding-bottom: 5px!important;
+    margin-right: 10px;
+}
+
+.nav-tabs .nav-link:active, .nav-tabs .nav-link:focus{
+    border-bottom: 3px solid var(--mainBlack)!important;
+    font-weight: bold!important;
+    color: var(--mainPink)!important;
 }
