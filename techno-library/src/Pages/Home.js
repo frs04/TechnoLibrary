@@ -1,10 +1,11 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import {AiFillStar, AiOutlineStar, AiFillHeart, AiOutlineEye} from 'react-icons/ai';
+import {BsPersonCircle} from 'react-icons/bs';
 import {Tabs, Tab} from 'react-bootstrap';
 
 const Home = () => {
@@ -24,20 +25,34 @@ const Home = () => {
       400: {
         items: 1,
       },
+      500: {
+        items: 2,
+      },
       600: {
-        items: 3,
+        items: 2,
       },
       700: {
-        items: 4,
+        items: 2,
+      },
+      800: {
+        items: 3,
+      },
+      900: {
+        items: 3,
       },
       1000: {
-        items: 5,
+        items: 4,
       },
       1200: {
-          items: 6,
+          items: 5,
       }
     },
   };
+
+  useEffect(() => {
+    document.title = "Techno - Home"
+  }, [])
+  
   return (
     <div className='container-fluid p-0'>
        <div className='row mt-2'>
@@ -62,64 +77,66 @@ const Home = () => {
        </div>
        <div className='container'>
          <div className='row mt-3 mb-4'>
-           <div className='col-3'>
+           <div className='col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3'>
              <label className='TopLabel'>Top Rating Books</label>
            </div>
-           <div className='col-7'>
+           <div className='col-lg-6 col-xl-7 d-none d-lg-block '>
              <hr/>
            </div>
-           <div className='col-2'>
+           <div className='col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2'>
              <Link to="#" className="ViewAllBtn">View All Books</Link>
            </div>
          </div>
          <div className='row mb-2'>
            <OwlCarousel {...owlOptions} className="owl-theme" id='HomeOwl'>
              <div class="item">
-               <div className='HomeOwlStyle'>
-                  <div className='row'>
+               <div className='card HomeOwlStyle'>
+                  <div className='card-img-top'>
                     <img src='./images/book2.jpg'/>
                   </div>
-                  <div className='row mt-1'>
-                    <label className='Category'>Category Name</label>
-                  </div>
-                  <div className='row'>
-                    <label className='Name'>Book Name</label>
-                  </div>
-                  <div className='row'>
-                    <ul className='Stars'>
-                      <li><AiFillStar/></li>
-                      <li><AiFillStar/></li>
-                      <li><AiFillStar/></li>
-                      <li><AiFillStar/></li>
-                      <li><AiOutlineStar/></li>
-                    </ul>
-                  </div>
-                  <div className='row'>
-                    <label className='Free'>Free</label>
-                  </div>
-                  <div className='DisplayHover'>
-                    <button type='button'><AiFillHeart/></button>
-                    <br/>
-                    <button type='button'><AiOutlineEye/></button>
+                  <div className='card-body'>
+                    <div className='row mt-1'>
+                      <label className='Category'>Category Name</label>
+                    </div>
+                    <div className='row'>
+                      <label className='Name'>Book Name</label>
+                    </div>
+                    <div className='row'>
+                      <ul className='Stars'>
+                        <li><AiFillStar/></li>
+                        <li><AiFillStar/></li>
+                        <li><AiFillStar/></li>
+                        <li><AiFillStar/></li>
+                        <li><AiOutlineStar/></li>
+                      </ul>
+                    </div>
+                    <div className='row'>
+                      <label className='Free'>Free</label>
+                    </div>
+                    <div className='DisplayHover'>
+                      <button type='button'><AiFillHeart/></button>
+                      <br/>
+                      <button type='button'><AiOutlineEye/></button>
+                    </div>
                   </div>
                </div>
              </div>
            </OwlCarousel>
          </div>
          <div className='row mt-5 mb-5'>
-           <div className='col-3'>
-             <label className='TopLabel'>Top 10 This Week Books</label>
+           <div className='col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3'>
+             <label className='TopLabel'>Top 10 This Week</label>
            </div>
-           <div className='col-7'>
+           <div className='col-lg-6 col-xl-7 d-none d-lg-block '>
              <hr/>
            </div>
-           <div className='col-2'>
+           <div className='col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2'>
              <Link to="#" className="ViewAllBtn">View All Books</Link>
            </div>
          </div>
          <div className='row HomeTop10 mb-5'>
-           <div className='col-9'>
-             <img src='./images/top10.jpg'/>
+           <div className='col-12 col-sm-12 col-md-12 col-lg-9 HomeTop10'>
+             <img src='./images/top10.jpg' className='w-100'/>
              <div className='HomeTop10Info text-center'>
               <div className='row'>
                 <label className='HomeAuthor text-dark'>Book Author</label>
@@ -134,103 +151,115 @@ const Home = () => {
               </div>
              </div>
            </div>
-           <div className='col-2'>
-             <div className='row mt-5'>
-              <div className='HomeOwlStyle'>
-                <div className='row'>
-                  <img src='./images/book2.jpg' className='ImgTop10'/>
+           <div className='col-12 col-sm-12 col-md-12 col-lg-2'>
+             <div className='row'>
+               <div className='col-12 col-sm-6 col-md-6 col-lg-12'>
+                <div className='row mt-5'>
+                  <div className='card HomeOwlStyle'>
+                    <div className='card-img-top'>
+                      <img src='./images/book2.jpg'/>
+                    </div>
+                    <div className='card-body'>
+                      <div className='row mt-1'>
+                        <label className='Category'>Category Name</label>
+                      </div>
+                      <div className='row'>
+                        <label className='Name'>Book Name</label>
+                      </div>
+                      <div className='row'>
+                        <ul className='Stars'>
+                          <li><AiFillStar/></li>
+                          <li><AiFillStar/></li>
+                          <li><AiFillStar/></li>
+                          <li><AiFillStar/></li>
+                          <li><AiOutlineStar/></li>
+                        </ul>
+                      </div>
+                      <div className='row'>
+                        <label className='Free'>Free</label>
+                      </div>
+                      <div className='DisplayHover'>
+                        <button type='button'><AiFillHeart/></button>
+                        <br/>
+                        <button type='button'><AiOutlineEye/></button>
+                      </div>
+                    </div>
                 </div>
-                <div className='row mt-1'>
-                  <label className='Category'>Category Name</label>
                 </div>
-                <div className='row'>
-                  <label className='Name'>Book Name</label>
+               </div>
+               <div className="col-12 col-sm-6 col-md-6 col-lg-12">
+                <div className='row mt-5'>
+                  <div className='card HomeOwlStyle'>
+                    <div className='card-img-top'>
+                      <img src='./images/book2.jpg'/>
+                    </div>
+                    <div className='card-body'>
+                      <div className='row mt-1'>
+                        <label className='Category'>Category Name</label>
+                      </div>
+                      <div className='row'>
+                        <label className='Name'>Book Name</label>
+                      </div>
+                      <div className='row'>
+                        <ul className='Stars'>
+                          <li><AiFillStar/></li>
+                          <li><AiFillStar/></li>
+                          <li><AiFillStar/></li>
+                          <li><AiFillStar/></li>
+                          <li><AiOutlineStar/></li>
+                        </ul>
+                      </div>
+                      <div className='row'>
+                        <label className='Free'>Free</label>
+                      </div>
+                      <div className='DisplayHover'>
+                        <button type='button'><AiFillHeart/></button>
+                        <br/>
+                        <button type='button'><AiOutlineEye/></button>
+                      </div>
+                    </div>
                 </div>
-                <div className='row'>
-                  <ul className='Stars'>
-                    <li><AiFillStar/></li>
-                    <li><AiFillStar/></li>
-                    <li><AiFillStar/></li>
-                    <li><AiFillStar/></li>
-                    <li><AiOutlineStar/></li>
-                  </ul>
                 </div>
-                <div className='row'>
-                  <label className='Free'>Free</label>
-                </div>
-                <div className='DisplayHover'>
-                    <button type='button'><AiFillHeart/></button>
-                    <br/>
-                    <button type='button'><AiOutlineEye/></button>
-                  </div>
-              </div>
-            </div>
-             <div className='row mt-5'>
-              <div className='HomeOwlStyle'>
-                <div className='row'>
-                  <img src='./images/book2.jpg' className='ImgTop10'/>
-                </div>
-                <div className='row mt-1'>
-                  <label className='Category'>Category Name</label>
-                </div>
-                <div className='row'>
-                  <label className='Name'>Book Name</label>
-                </div>
-                <div className='row'>
-                  <ul className='Stars'>
-                    <li><AiFillStar/></li>
-                    <li><AiFillStar/></li>
-                    <li><AiFillStar/></li>
-                    <li><AiFillStar/></li>
-                    <li><AiOutlineStar/></li>
-                  </ul>
-                </div>
-                <div className='row'>
-                  <label className='Free'>Free</label>
-                </div>
-                <div className='DisplayHover'>
-                    <button type='button'><AiFillHeart/></button>
-                    <br/>
-                    <button type='button'><AiOutlineEye/></button>
-                  </div>
-              </div>
-            </div>
+               </div>
+             </div>
            </div>
          </div>
          <div className='row mt-3 mb-4 text-center'>
             <label className='TopLabel'>Featured Books</label>
          </div>
          <div className='row'>
-         <Tabs defaultActiveKey="Most Viewed" id="HomeTabs" className="mb-3 CenterTabs">
+          <Tabs defaultActiveKey="Most Viewed" id="HomeTabs" className="mb-3 CenterTabs" fill>
             <Tab eventKey="Most Viewed" title="Most Viewed" className='SingleTab'>
               <OwlCarousel {...owlOptions} className="owl-theme" id='HomeOwl'>
               <div class="item">
-                <div className='HomeOwlStyle'>
-                    <div className='row'>
+                <div className='card HomeOwlStyle'>
+                    <div className='card-img-top'>
                       <img src='./images/book2.jpg'/>
                     </div>
-                    <div className='row mt-1'>
-                      <label className='Category'>Category Name</label>
-                    </div>
-                    <div className='row'>
-                      <label className='Name'>Book Name</label>
-                    </div>
-                    <div className='row'>
-                      <ul className='Stars'>
-                        <li><AiFillStar/></li>
-                        <li><AiFillStar/></li>
-                        <li><AiFillStar/></li>
-                        <li><AiFillStar/></li>
-                        <li><AiOutlineStar/></li>
-                      </ul>
-                    </div>
-                    <div className='row'>
-                      <label className='Free'>Free</label>
-                    </div>
-                    <div className='DisplayHover'>
-                      <button type='button'><AiFillHeart/></button>
-                      <br/>
-                      <button type='button'><AiOutlineEye/></button>
+                    <div className='card-body'>
+                      <div className='row mt-1'>
+                        <label className='Category'>Category Name</label>
+                      </div>
+                      <div className='row'>
+                        <label className='Name'>Book Name</label>
+                      </div>
+                      <div className='row'>
+                        <ul className='Stars'>
+                          <li><AiFillStar/></li>
+                          <li><AiFillStar/></li>
+                          <li><AiFillStar/></li>
+                          <li><AiFillStar/></li>
+                          <li><AiOutlineStar/></li>
+                        </ul>
+                      </div>
+                      <div className='row'>
+                        <label className='Free'>Free</label>
+                      </div>
+                      <div className='DisplayHover'>
+                        <button type='button'><AiFillHeart/></button>
+                        <br/>
+                        <button type='button'><AiOutlineEye/></button>
+                      </div>
                     </div>
                 </div>
               </div>
@@ -239,32 +268,34 @@ const Home = () => {
             <Tab eventKey="Most Downloaded" title="Most Downloaded">
               <OwlCarousel {...owlOptions} className="owl-theme" id='HomeOwl'>
               <div class="item">
-                <div className='HomeOwlStyle'>
-                    <div className='row'>
+                <div className='card HomeOwlStyle'>
+                    <div className='card-img-top'>
                       <img src='./images/book2.jpg'/>
                     </div>
-                    <div className='row mt-1'>
-                      <label className='Category'>Category Name</label>
-                    </div>
-                    <div className='row'>
-                      <label className='Name'>Book Name</label>
-                    </div>
-                    <div className='row'>
-                      <ul className='Stars'>
-                        <li><AiFillStar/></li>
-                        <li><AiFillStar/></li>
-                        <li><AiFillStar/></li>
-                        <li><AiFillStar/></li>
-                        <li><AiOutlineStar/></li>
-                      </ul>
-                    </div>
-                    <div className='row'>
-                      <label className='Free'>Free</label>
-                    </div>
-                    <div className='DisplayHover'>
-                      <button type='button'><AiFillHeart/></button>
-                      <br/>
-                      <button type='button'><AiOutlineEye/></button>
+                    <div className='card-body'>
+                      <div className='row mt-1'>
+                        <label className='Category'>Category Name</label>
+                      </div>
+                      <div className='row'>
+                        <label className='Name'>Book Name</label>
+                      </div>
+                      <div className='row'>
+                        <ul className='Stars'>
+                          <li><AiFillStar/></li>
+                          <li><AiFillStar/></li>
+                          <li><AiFillStar/></li>
+                          <li><AiFillStar/></li>
+                          <li><AiOutlineStar/></li>
+                        </ul>
+                      </div>
+                      <div className='row'>
+                        <label className='Free'>Free</label>
+                      </div>
+                      <div className='DisplayHover'>
+                        <button type='button'><AiFillHeart/></button>
+                        <br/>
+                        <button type='button'><AiOutlineEye/></button>
+                      </div>
                     </div>
                 </div>
               </div>
@@ -273,38 +304,149 @@ const Home = () => {
             <Tab eventKey="Featured" title="Featured" >
               <OwlCarousel {...owlOptions} className="owl-theme" id='HomeOwl'>
               <div class="item">
-                <div className='HomeOwlStyle'>
-                    <div className='row'>
+                <div className='card HomeOwlStyle'>
+                    <div className='card-img-top'>
                       <img src='./images/book2.jpg'/>
                     </div>
-                    <div className='row mt-1'>
-                      <label className='Category'>Category Name</label>
-                    </div>
-                    <div className='row'>
-                      <label className='Name'>Book Name</label>
-                    </div>
-                    <div className='row'>
-                      <ul className='Stars'>
-                        <li><AiFillStar/></li>
-                        <li><AiFillStar/></li>
-                        <li><AiFillStar/></li>
-                        <li><AiFillStar/></li>
-                        <li><AiOutlineStar/></li>
-                      </ul>
-                    </div>
-                    <div className='row'>
-                      <label className='Free'>Free</label>
-                    </div>
-                    <div className='DisplayHover'>
-                      <button type='button'><AiFillHeart/></button>
-                      <br/>
-                      <button type='button'><AiOutlineEye/></button>
+                    <div className='card-body'>
+                      <div className='row mt-1'>
+                        <label className='Category'>Category Name</label>
+                      </div>
+                      <div className='row'>
+                        <label className='Name'>Book Name</label>
+                      </div>
+                      <div className='row'>
+                        <ul className='Stars'>
+                          <li><AiFillStar/></li>
+                          <li><AiFillStar/></li>
+                          <li><AiFillStar/></li>
+                          <li><AiFillStar/></li>
+                          <li><AiOutlineStar/></li>
+                        </ul>
+                      </div>
+                      <div className='row'>
+                        <label className='Free'>Free</label>
+                      </div>
+                      <div className='DisplayHover'>
+                        <button type='button'><AiFillHeart/></button>
+                        <br/>
+                        <button type='button'><AiOutlineEye/></button>
+                      </div>
                     </div>
                 </div>
               </div>
             </OwlCarousel>
             </Tab>
           </Tabs>
+         </div>
+         <div className='row mt-5 mb-5'>
+           <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+             <div className='HomeAuthorBox'>
+              <div className='row'>
+                <label className='Title'>Popular Authors</label>
+              </div>
+              <hr className='Line'/>
+              <div>
+                <div className='row mt-2'>
+                  <div className='col-2'>
+                    <img src='./images/smallAuth.png' />
+                  </div>
+                  <div className='col-8'>
+                    <label className='Name'>Author Name</label>
+                  </div>
+                  <div className='col-2'>
+                    <Link to="#"><BsPersonCircle/></Link>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className='row mt-2'>
+                  <div className='col-2'>
+                    <img src='./images/smallAuth.png' />
+                  </div>
+                  <div className='col-8'>
+                    <label className='Name'>Author Name</label>
+                  </div>
+                  <div className='col-2'>
+                    <Link to="#"><BsPersonCircle/></Link>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className='row mt-2'>
+                  <div className='col-2'>
+                    <img src='./images/smallAuth.png' />
+                  </div>
+                  <div className='col-8'>
+                    <label className='Name'>Author Name</label>
+                  </div>
+                  <div className='col-2'>
+                    <Link to="#"><BsPersonCircle/></Link>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className='row mt-2'>
+                  <div className='col-2'>
+                    <img src='./images/smallAuth.png' />
+                  </div>
+                  <div className='col-8'>
+                    <label className='Name'>Author Name</label>
+                  </div>
+                  <div className='col-2'>
+                    <Link to="#"><BsPersonCircle/></Link>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className='row mt-2'>
+                  <div className='col-2'>
+                    <img src='./images/smallAuth.png' />
+                  </div>
+                  <div className='col-8'>
+                    <label className='Name'>Author Name</label>
+                  </div>
+                  <div className='col-2'>
+                    <Link to="#"><BsPersonCircle/></Link>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className='row mt-2'>
+                  <div className='col-2'>
+                    <img src='./images/smallAuth.png' />
+                  </div>
+                  <div className='col-8'>
+                    <label className='Name'>Author Name</label>
+                  </div>
+                  <div className='col-2'>
+                    <Link to="#"><BsPersonCircle/></Link>
+                  </div>
+                </div>
+              </div>
+             </div>
+           </div>
+           <div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+             <div className='HomeGenreBox '>
+              <div className='row'>
+                  <div className='col-8'>
+                    <label className='Title'>Popular Authors</label>
+                  </div>
+                  <div className='col-4 viewAll'>
+                    <Link to="#" className='ViewAllBtn float-end'>View All</Link>
+                  </div>
+                </div>
+                <hr className='Line'/>
+                <div className='row Single'>
+                  <img src='./images/scifi.jpg'/>
+                  <label className='Name'>Sci-Fi</label>
+                </div>
+                <div className='row mt-3 Single'>
+                  <img src='./images/romance.jpg'/>
+                  <label className='Name'>Romance</label>
+                </div>
+             </div>
+           </div>
          </div>
        </div>
     </div>

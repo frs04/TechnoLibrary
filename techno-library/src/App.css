@@ -14,7 +14,7 @@ body{
 /* Header */
 
 .HeaderBackground{
-    background-color: var(--mainLightGrey);
+    background: linear-gradient(90deg, rgba(153,153,153,1) 0%, rgba(228,228,228,1) 100%);
     height: 80px;
     box-shadow: 0px 15px 10px -18px var(--mainBlack);
 }
@@ -35,6 +35,24 @@ body{
     color: var(--mainBlue);
     transition: 0.4s!important;
 }
+
+@media (max-width: 991.98px) {
+    .HeaderNavbar .navbar-toggler{
+        position: absolute!important;
+        right: 0!important;
+        top: 20px!important;
+    }
+
+    .HeaderNavbar .navbar-collapse{
+        border-radius: 7px!important;
+        position: absolute!important;
+        right: -40px!important;
+        top: 80px!important;
+        padding: 10px!important;
+        background-color: #e4e4e4!important;
+        z-index: 999!important;
+    }
+ }
 
 .RightNav{
     line-height: 80px;
@@ -121,10 +139,12 @@ body{
     transition: .4s; 
 }
 
-#HomeCarousel .carousel-caption{
-    bottom: 35%!important;
-    left: 70%!important;
-}
+@media (min-width: 768px) { 
+    #HomeCarousel .carousel-caption{
+        top: 25%!important;
+        right: -30%!important;
+    }
+ }
 
 .TopLabel{
     font-size: 25px;
@@ -145,6 +165,12 @@ body{
     color: var(--mainLightGrey);
     opacity: .6;
     transition: .4s; 
+}
+
+@media (max-width: 991.98px) { 
+  .ViewAllBtn{
+      float: right;
+  }  
 }
 
 #HomeOwl img, .HomeOwlStyle img{
@@ -189,6 +215,9 @@ body{
 
 .HomeOwlStyle{
     position: relative;
+    margin: 0 auto;
+    width: 220px;
+    border: 0!important;
 }
 
 .HomeOwlStyle .Category{
@@ -218,10 +247,16 @@ body{
     position: relative;
 }
 
+@media (max-width: 991.98px) { 
+    .HomeTop10Info{
+        left: 35%!important;
+    }
+ }
+
 .HomeTop10Info{
     position: absolute;
     top: 60%;
-    left: 25%;
+    left: 40%;
 }
 
 .ImgTop10{
@@ -230,7 +265,7 @@ body{
 
 .DisplayHover{
     position: absolute;
-	bottom: 110px;
+	bottom: 150px;
 	right: 30px;
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
@@ -255,7 +290,6 @@ body{
 }
 
 .CenterTabs{
-    padding-left: 33%;
     border: 0!important;
 }
 
@@ -276,4 +310,93 @@ body{
     border-bottom: 3px solid var(--mainBlack)!important;
     font-weight: bold!important;
     color: var(--mainPink)!important;
+}
+
+.HomeAuthorBox{
+    background-color: var(--mainPink);
+    border-radius: 28px;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.HomeAuthorBox .Title{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--mainBlack);
+    text-transform: uppercase;
+}
+
+.HomeAuthorBox .Line{
+    width: 50%;
+    color: var(--mainDarkGrey);
+    height: 2px;
+}
+
+.HomeAuthorBox img{
+    width: 60px;
+    height: 60px;
+    border-radius: 28px;
+}
+
+.HomeAuthorBox .Name{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--mainBlack);
+    line-height: 60px;
+}
+
+.HomeAuthorBox svg{
+    font-size: 30px;
+    color: var(--mainBlue);
+}
+
+.HomeAuthorBox a{
+    line-height: 60px;
+}
+
+@media (max-width: 991.98px) { 
+    .HomeGenreBox{
+        margin-top: 20px;
+    }
+ }
+
+.HomeGenreBox{
+    background-color: var(--mainLightGrey);
+    border-radius: 28px;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.HomeGenreBox .Title{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--mainBlack);
+    text-transform: uppercase;
+}
+
+.HomeGenreBox .Line{
+    width: 50%;
+    color: var(--mainPink);
+    height: 2px;
+}
+
+.HomeGenreBox .viewAll{
+    line-height: 36px;
+}
+
+.HomeGenreBox img{
+    width: 65%;
+    border-radius: 15px;
+}
+
+.HomeGenreBox .Single{
+    position: relative;
+}
+
+.HomeGenreBox .Name{
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }

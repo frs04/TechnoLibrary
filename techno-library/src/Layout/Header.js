@@ -8,12 +8,12 @@ const Header = () => {
     <div className='HeaderBackground'>
         <div className='container'>
           <div className='row'>
-            <div className='col-2'>
+            <div className='col-4 col-sm-4 col-md-4 col-lg-2'>
               <a href='/'>
                 <img src='./images/Logo1.png' className='logoimg' alt='Logo' />
               </a>
             </div>
-            <div className='col-8'>
+            <div className='col-2 col-sm-2 col-md-2 col-lg-8'>
               <Navbar className='HeaderNavbar' expand="lg">
                 <Container>
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -28,7 +28,7 @@ const Header = () => {
                 </Container>
               </Navbar>
             </div>
-            <div className='col-2'>
+            <div className='col-4 col-sm-4 col-md-4 col-lg-2'>
               <div className='row float-end'>
                 <ul className='RightNav'>
                   <li>

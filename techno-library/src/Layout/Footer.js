@@ -6,7 +6,7 @@ const Footer = () => {
     <div className='FooterBackground'>
         <div className='container'>
             <div className='row'>
-                <div className='col-3 LogoBorder'>
+                <div className='col-3 d-none d-lg-block  LogoBorder'>
                     <a href='/'>
                         <img src='./images/Logo2.png' className='FooterLogo' alt='Logo'/>
                     </a>
