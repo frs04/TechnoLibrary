@@ -5,6 +5,7 @@ import Home from "../Pages/Home";
 import Categories from "../Pages/Categories";
 import Login from "../Pages/Login";
 import SignUp from "../Pages/SignUp";
+import Favorite from "../Pages/Favorite";
 
 const AppRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const AppRoutes = () => {
           <Route exact path="/signup" element={<SignUp />} />
           <Route exact path="/categories" element={<Categories />} />
           <Route exact path="/Authors" element={<Authors />} />
+          <Route exact path="/Favorite" element={<Favorite />} />
         </Routes>
       </Router>
     </>
