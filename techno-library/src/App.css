@@ -400,3 +400,89 @@ body{
     bottom: 20px;
     left: 20px;
 }
+
+/* Authors Page */
+
+.AuthorsTitle{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--mainBlack);
+}
+
+.AuthorsNumbers{
+    font-size: 15px;
+    color: var(--mainBlue);
+    border-bottom: 1px solid var(--mainBlue);
+}
+
+.AuthorsAsideBox{
+    background-color: var(--mainLightGrey);
+    border-radius: 28px;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.AuthorsAsideBox .Title{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--mainBlack);
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--mainBlack);
+}
+
+.AuthorsAsideBox .Category{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--mainBlack);
+    text-decoration: none;
+    transition: .4s;
+}
+.AuthorsAsideBox .Category:hover{
+    color: var(--mainDarkGrey);
+    transition: .4s;
+}
+
+.AuthorsAsideBox svg{
+    color: var(--mainBlue);
+    font-size: 20px;
+}
+
+.SingleAuthorBox{
+    width: 250px;
+    border: 0;
+    cursor: pointer;
+    transition:all .3s ease;
+    border-radius: 15px;
+    margin-bottom: 20px!important;
+    margin: 0 auto;
+}
+
+.SingleAuthorBox:hover{
+    opacity: .8;
+    margin-top: -3px;
+    box-shadow: 0 4px 8px 0 var(--mainDarkGrey), 0 6px 20px 0 rgba(212, 212, 212, 0.19);
+    transition:all .3s ease;
+    border-radius: 15px;
+}
+
+.SingleAuthorBox img{
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.SingleAuthorBox .card-body{
+    padding: 0;
+    padding-top: 20px!important;
+}
+
+.SingleAuthorBox .Name{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--mainDarkGrey);
+}
+
+.SingleAuthorBox .Stars li{
+    display: inline;
+}

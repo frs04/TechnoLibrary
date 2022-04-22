@@ -433,7 +433,7 @@ const Home = () => {
                     <label className='Title'>Popular Authors</label>
                   </div>
                   <div className='col-4 viewAll'>
-                    <Link to="#" className='ViewAllBtn float-end'>View All</Link>
+                    <Link to="/Authors" className='ViewAllBtn float-end'>View All</Link>
                   </div>
                 </div>
                 <hr className='Line'/>

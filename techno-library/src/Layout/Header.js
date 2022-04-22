@@ -1,8 +1,8 @@
 import React from 'react'
 import {Navbar,Container, Nav} from "react-bootstrap";
 import {BsHouseDoor, BsDiagram3, BsPeople, BsList, BsPerson, BsGear} from 'react-icons/bs';
-import {HiOutlineBookOpen} from 'react-icons/hi'
-import { Link } from 'react-router-dom';
+import {HiOutlineBookOpen} from 'react-icons/hi';
+
 const Header = () => {
   return (
     <div className='HeaderBackground'>
@@ -21,7 +21,7 @@ const Header = () => {
                     <Nav className="me-auto">
                       <Nav.Link href="#1"> <BsHouseDoor/> Home</Nav.Link>
                       <Nav.Link href="#2"><BsDiagram3/> Book Categories</Nav.Link>
-                      <Nav.Link href="#3"><BsPeople/> Authors</Nav.Link>
+                      <Nav.Link href="/Authors"><BsPeople/> Authors</Nav.Link>
                       <Nav.Link href="#4"><BsList/> Menu</Nav.Link>
                     </Nav>
                   </Navbar.Collapse>
