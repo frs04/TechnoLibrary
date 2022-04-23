@@ -266,7 +266,7 @@ body{
 .DisplayHover{
     position: absolute;
 	bottom: 150px;
-	right: 30px;
+	right: 20px;
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
@@ -455,8 +455,13 @@ body{
     transition:all .3s ease;
     border-radius: 15px;
     margin-bottom: 20px!important;
-    margin: 0 auto;
 }
+
+@media (max-width: 575.98px) { 
+    .SingleAuthorBox{
+        margin: 0 auto;
+    }
+ }
 
 .SingleAuthorBox:hover{
     opacity: .8;
@@ -657,4 +662,84 @@ body{
 #submitbtn {
     margin-left: 15%;
     width: 80px !important;
+
+/* Book Details */
+
+.TopBox{
+    background-color: var(--mainLightGrey);
+    line-height: 60px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.TopBox .Path li{
+    display: inline;
+}
+
+.TopBox .Path a{
+    font-size: 15px;
+    color: var(--mainBlack);
+    text-decoration: none;
+    transition: .4s;
+}
+
+.TopBox .Path a:hover{
+    color: var(--mainDarkGrey);
+    transition: .4s;
+}
+
+.TopBox .Path .Name{
+    color: var(--mainBlue);
+    font-size: 15px;
+}
+
+.BookDetails .Name{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.BookDetails tbody, td, tfoot, th, thead, tr{
+   padding-bottom: 20px;
+}
+
+.BookDetails .Details tr span{
+    float: right;
+    margin-right: 5px;
+}
+
+.BookDetails .Details tr th{
+    width: 200px;
+}
+
+.BookDetails .Details tr td{
+    color: var(--mainBlue);
+}
+
+.BookDetails .Options{
+    border: 0;
+    background-color: var(--mainBlue);
+    color: var(--mainLightGrey);
+    border-radius: 28px;
+    padding: 7px 15px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    transition: .4s;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.BookDetails .Options:hover{
+    opacity: .6;
+    transition: .4s;
+}
+
+.BookDet .SingleTab .Stars li{
+    display: inline;
+    color: yellow;
+    font-size: 25px;
+}
+.SingleTab .Stars .Number{
+    color: var(--mainBlack);
+    font-size: 15px;
 }
