@@ -92,15 +92,19 @@ const Home = () => {
              <div class="item">
                <div className='card HomeOwlStyle'>
                   <div className='card-img-top'>
-                    <img src='./images/book2.jpg'/>
+                    <Link to="/BookDetails">
+                      <img src='./images/book2.jpg' alt='book'/>
+                    </Link>
                   </div>
                   <div className='card-body'>
+                  <Link to="/BookDetails">
                     <div className='row mt-1'>
                       <label className='Category'>Category Name</label>
                     </div>
                     <div className='row'>
                       <label className='Name'>Book Name</label>
                     </div>
+                    </Link>
                     <div className='row'>
                       <ul className='Stars'>
                         <li><AiFillStar/></li>
@@ -136,7 +140,7 @@ const Home = () => {
          </div>
          <div className='row HomeTop10 mb-5'>
            <div className='col-12 col-sm-12 col-md-12 col-lg-9 HomeTop10'>
-             <img src='./images/top10.jpg' className='w-100'/>
+             <img src='./images/top10.jpg' className='w-100'  alt='book'/>
              <div className='HomeTop10Info text-center'>
               <div className='row'>
                 <label className='HomeAuthor text-dark'>Book Author</label>
@@ -157,15 +161,19 @@ const Home = () => {
                 <div className='row mt-5'>
                   <div className='card HomeOwlStyle'>
                     <div className='card-img-top'>
-                      <img src='./images/book2.jpg'/>
+                      <Link to="/BookDetails">
+                        <img src='./images/book2.jpg'  alt='book'/>
+                      </Link>
                     </div>
                     <div className='card-body'>
+                    <Link to="/BookDetails">
                       <div className='row mt-1'>
                         <label className='Category'>Category Name</label>
                       </div>
                       <div className='row'>
                         <label className='Name'>Book Name</label>
                       </div>
+                      </Link>
                       <div className='row'>
                         <ul className='Stars'>
                           <li><AiFillStar/></li>
@@ -191,15 +199,19 @@ const Home = () => {
                 <div className='row mt-5'>
                   <div className='card HomeOwlStyle'>
                     <div className='card-img-top'>
-                      <img src='./images/book2.jpg'/>
+                      <Link to="/BookDetails">
+                        <img src='./images/book2.jpg'  alt='book'/>
+                      </Link>
                     </div>
                     <div className='card-body'>
+                    <Link to="/BookDetails">
                       <div className='row mt-1'>
                         <label className='Category'>Category Name</label>
                       </div>
                       <div className='row'>
                         <label className='Name'>Book Name</label>
                       </div>
+                      </Link>
                       <div className='row'>
                         <ul className='Stars'>
                           <li><AiFillStar/></li>
@@ -233,16 +245,20 @@ const Home = () => {
               <OwlCarousel {...owlOptions} className="owl-theme" id='HomeOwl'>
               <div class="item">
                 <div className='card HomeOwlStyle'>
-                    <div className='card-img-top'>
-                      <img src='./images/book2.jpg'/>
+                  <div className='card-img-top'>
+                    <Link to="/BookDetails">
+                      <img src='./images/book2.jpg'  alt='book'/>
+                    </Link>
+                  </div>
+                  <div className='card-body'>
+                  <Link to="/BookDetails">
+                    <div className='row mt-1'>
+                      <label className='Category'>Category Name</label>
                     </div>
-                    <div className='card-body'>
-                      <div className='row mt-1'>
-                        <label className='Category'>Category Name</label>
-                      </div>
-                      <div className='row'>
-                        <label className='Name'>Book Name</label>
-                      </div>
+                    <div className='row'>
+                      <label className='Name'>Book Name</label>
+                    </div>
+                    </Link>
                       <div className='row'>
                         <ul className='Stars'>
                           <li><AiFillStar/></li>
@@ -269,16 +285,20 @@ const Home = () => {
               <OwlCarousel {...owlOptions} className="owl-theme" id='HomeOwl'>
               <div class="item">
                 <div className='card HomeOwlStyle'>
-                    <div className='card-img-top'>
-                      <img src='./images/book2.jpg'/>
+                  <div className='card-img-top'>
+                    <Link to="/BookDetails">
+                      <img src='./images/book2.jpg'  alt='book'/>
+                    </Link>
+                  </div>
+                  <div className='card-body'>
+                  <Link to="/BookDetails">
+                    <div className='row mt-1'>
+                      <label className='Category'>Category Name</label>
                     </div>
-                    <div className='card-body'>
-                      <div className='row mt-1'>
-                        <label className='Category'>Category Name</label>
-                      </div>
-                      <div className='row'>
-                        <label className='Name'>Book Name</label>
-                      </div>
+                    <div className='row'>
+                      <label className='Name'>Book Name</label>
+                    </div>
+                    </Link>
                       <div className='row'>
                         <ul className='Stars'>
                           <li><AiFillStar/></li>
@@ -305,16 +325,20 @@ const Home = () => {
               <OwlCarousel {...owlOptions} className="owl-theme" id='HomeOwl'>
               <div class="item">
                 <div className='card HomeOwlStyle'>
-                    <div className='card-img-top'>
-                      <img src='./images/book2.jpg'/>
+                  <div className='card-img-top'>
+                    <Link to="/BookDetails">
+                      <img src='./images/book2.jpg'  alt='book'/>
+                    </Link>
+                  </div>
+                  <div className='card-body'>
+                  <Link to="/BookDetails">
+                    <div className='row mt-1'>
+                      <label className='Category'>Category Name</label>
                     </div>
-                    <div className='card-body'>
-                      <div className='row mt-1'>
-                        <label className='Category'>Category Name</label>
-                      </div>
-                      <div className='row'>
-                        <label className='Name'>Book Name</label>
-                      </div>
+                    <div className='row'>
+                      <label className='Name'>Book Name</label>
+                    </div>
+                    </Link>
                       <div className='row'>
                         <ul className='Stars'>
                           <li><AiFillStar/></li>
@@ -349,7 +373,7 @@ const Home = () => {
               <div>
                 <div className='row mt-2'>
                   <div className='col-2'>
-                    <img src='./images/smallAuth.png' />
+                    <img src='./images/smallAuth.png' alt='author' />
                   </div>
                   <div className='col-8'>
                     <label className='Name'>Author Name</label>
@@ -362,7 +386,7 @@ const Home = () => {
               <div>
                 <div className='row mt-2'>
                   <div className='col-2'>
-                    <img src='./images/smallAuth.png' />
+                    <img src='./images/smallAuth.png'  alt='author' />
                   </div>
                   <div className='col-8'>
                     <label className='Name'>Author Name</label>
@@ -375,7 +399,7 @@ const Home = () => {
               <div>
                 <div className='row mt-2'>
                   <div className='col-2'>
-                    <img src='./images/smallAuth.png' />
+                    <img src='./images/smallAuth.png' alt='author' />
                   </div>
                   <div className='col-8'>
                     <label className='Name'>Author Name</label>
@@ -388,7 +412,7 @@ const Home = () => {
               <div>
                 <div className='row mt-2'>
                   <div className='col-2'>
-                    <img src='./images/smallAuth.png' />
+                    <img src='./images/smallAuth.png' alt='author' />
                   </div>
                   <div className='col-8'>
                     <label className='Name'>Author Name</label>
@@ -401,7 +425,7 @@ const Home = () => {
               <div>
                 <div className='row mt-2'>
                   <div className='col-2'>
-                    <img src='./images/smallAuth.png' />
+                    <img src='./images/smallAuth.png' alt='author' />
                   </div>
                   <div className='col-8'>
                     <label className='Name'>Author Name</label>
@@ -414,7 +438,7 @@ const Home = () => {
               <div>
                 <div className='row mt-2'>
                   <div className='col-2'>
-                    <img src='./images/smallAuth.png' />
+                    <img src='./images/smallAuth.png' alt='author' />
                   </div>
                   <div className='col-8'>
                     <label className='Name'>Author Name</label>
@@ -438,11 +462,11 @@ const Home = () => {
                 </div>
                 <hr className='Line'/>
                 <div className='row Single'>
-                  <img src='./images/scifi.jpg'/>
+                  <img src='./images/scifi.jpg' alt='genre'/>
                   <label className='Name'>Sci-Fi</label>
                 </div>
                 <div className='row mt-3 Single'>
-                  <img src='./images/romance.jpg'/>
+                  <img src='./images/romance.jpg' alt='genre'/>
                   <label className='Name'>Romance</label>
                 </div>
              </div>

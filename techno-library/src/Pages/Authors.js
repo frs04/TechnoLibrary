@@ -24,7 +24,7 @@ const Authors = () => {
                         <div className='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4'>
                             <div className='card SingleAuthorBox'>
                                 <div className='card-img-top'>
-                                    <img src='./images/authors.jpg'/>
+                                    <img src='./images/authors.jpg' alt='author'/>
                                 </div>
                                 <div className='card-body text-center'>
                                     <div className='row'>
@@ -45,7 +45,7 @@ const Authors = () => {
                         <div className='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4'>
                             <div className='card SingleAuthorBox'>
                                 <div className='card-img-top'>
-                                    <img src='./images/authors.jpg'/>
+                                    <img src='./images/authors.jpg' alt='author'/>
                                 </div>
                                 <div className='card-body text-center'>
                                     <div className='row'>
@@ -66,7 +66,7 @@ const Authors = () => {
                         <div className='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4'>
                             <div className='card SingleAuthorBox'>
                                 <div className='card-img-top'>
-                                    <img src='./images/authors.jpg'/>
+                                    <img src='./images/authors.jpg' alt='author'/>
                                 </div>
                                 <div className='card-body text-center'>
                                     <div className='row'>
@@ -87,7 +87,7 @@ const Authors = () => {
                         <div className='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4'>
                             <div className='card SingleAuthorBox'>
                                 <div className='card-img-top'>
-                                    <img src='./images/authors.jpg'/>
+                                    <img src='./images/authors.jpg' alt='author'/>
                                 </div>
                                 <div className='card-body text-center'>
                                     <div className='row'>
