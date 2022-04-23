@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsStopCircleFill } from "react-icons/bs";
 
 const Categories = () => {
@@ -7,6 +7,10 @@ const Categories = () => {
     e.preventDefault();
     setSearchInput(e.target.value);
   };
+
+  useEffect(() => {
+    document.title = "Techno - Categories"
+  }, [])
   return (
     <div className="categ container-fluid">
       <div className="category">

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Navbar,Container, Nav} from "react-bootstrap";
 import {BsHouseDoor, BsDiagram3, BsPeople, BsList, BsPerson, BsGear} from 'react-icons/bs';
-import {HiOutlineBookOpen} from 'react-icons/hi';
+import {AiOutlineHeart} from 'react-icons/ai';
 
 const Header = () => {
   return (
@@ -20,16 +20,10 @@ const Header = () => {
                   <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
 
-                    <Nav.Link href="/Home"> <BsHouseDoor/> Home</Nav.Link>
-                      <Nav.Link href="/Categories" src='../Pages/Categories.js'><BsDiagram3/> Book Categories</Nav.Link>
-                      <Nav.Link href="/Authors" src="../Pages/Authors.js"><BsPeople/> Authors</Nav.Link>
-                      <Nav.Link href="/Menu"><BsList/> Menu</Nav.Link>
-
-
-                      <Nav.Link href="/"> <BsHouseDoor/> Home</Nav.Link>
-                      <Nav.Link href="#2"><BsDiagram3/> Book Categories</Nav.Link>
+                    <Nav.Link href="/"> <BsHouseDoor/> Home</Nav.Link>
+                      <Nav.Link href="/Categories"><BsDiagram3/> Book Categories</Nav.Link>
                       <Nav.Link href="/Authors"><BsPeople/> Authors</Nav.Link>
-                      <Nav.Link href="#4"><BsList/> Menu</Nav.Link>
+                      <Nav.Link href="#"><BsList/> Menu</Nav.Link>
 
                     </Nav>
                   </Navbar.Collapse>
@@ -40,13 +34,13 @@ const Header = () => {
               <div className='row float-end'>
                 <ul className='RightNav'>
                   <li>
-                    <a href="#"><BsPerson/></a>
+                    <a href="/Login"><BsPerson/></a>
                   </li>
                   <li>
-                    <a href="#"><HiOutlineBookOpen/></a>
+                    <a href="/Favorite"><AiOutlineHeart/></a>
                   </li>
                   <li>
-                    <a href="#"><BsGear/></a>
+                    <a href="/PersonalInfo"><BsGear/></a>
                   </li>
                 </ul>
               </div>

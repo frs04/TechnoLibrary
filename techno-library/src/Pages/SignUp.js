@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Card from 'react-bootstrap/Card';
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
     const [email, setEmail] = useState("");
@@ -55,6 +56,10 @@ const SignUp = () => {
             onChange={(e) => setConfirmPass(e.target.value)}
           />
         </Form.Group>
+        
+        <div className="row">
+          <label>Already have an account? <Link to="/Login" className="SignupLink">Login</Link></label>
+        </div>
         <Button className="button btn-primary" block size="lg" type="submit">
           SignUp
         </Button>

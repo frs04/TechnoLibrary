@@ -48,9 +48,12 @@ const Favorite = () => {
           }
         },
       };
+      useEffect(() => {
+        document.title = "Techno - Favorites"
+      }, [])
   return (
         <div className='Fav'>
-        <h3 className='titleFav'>Favorite List</h3>
+        <h3 className='TopLabel text-center mb-5'>Favorite List</h3>
         <div className='row mb-2'>
            <OwlCarousel {...owlOptions} className="owl-theme" id='HomeOwl'>
              <div class="item">
@@ -76,9 +79,9 @@ const Favorite = () => {
                     </div>
                     <div className='row'>
                       <label className='Free'>Free</label>
-                      <button className='removeBtn' name='remove'>remove</button>
+                      <button className='removeBtn' name='remove'>Remove</button>
                     </div>
-                    <div className='DisplayHover'>
+                    <div className='DisplayHover ExtraHoverFavorite'>
                       <button type='button'><AiFillHeart/></button>
                       <br/>
                       <button type='button'><AiOutlineEye/></button>

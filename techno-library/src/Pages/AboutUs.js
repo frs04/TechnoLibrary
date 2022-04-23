@@ -31,7 +31,7 @@ const AboutUs = () => {
                 <h5 className='ml-3 font-weight-bold'>Welcome to</h5>
             </div>
             <div id="logowrapper">
-                <img src='./images/authors.jpg' alt="logo" id="logopng" />
+                <img src='./images/Logo1.png' alt="logo" id="logopng" />
             </div>
         </div>
 
@@ -50,7 +50,7 @@ const AboutUs = () => {
                             djk04@mail.aub.edu</p>
                     </div>
                     <div id="logowrapper">
-                        <img src='./images/authors.jpg' alt="" className='imgs' />
+                        <img src='./images/dana.png' alt="" className='imgs' />
                     </div>
                     
                     <br />
@@ -61,7 +61,7 @@ const AboutUs = () => {
                             frs04@mail.aub.edu</p>
                     </div>
                     <div id="logowrapper">
-                        <img src='./images/authors.jpg' alt="" className='imgs' />
+                        <img src='./images/fatima.png' alt="" className='imgs' />
                     </div>
 
                     <br />
@@ -72,7 +72,7 @@ const AboutUs = () => {
                             mha86@mail.aub.edu</p>
                     </div>
                     <div id="logowrapper">
-                        <img src='./images/authors.jpg' alt="" className='imgs' />
+                        <img src='./images/mhmd.jpeg' alt="" className='imgs' />
                     </div>
 
                 </div>

@@ -273,6 +273,10 @@ body{
     -webkit-transition: opacity 0.5s ease-in-out;
 }
 
+.ExtraHoverFavorite{
+    bottom: 200px!important;
+}
+
 .HomeOwlStyle:hover .DisplayHover{
 	opacity: 1;
 	transition: opacity 0.5s ease-in-out;
@@ -491,6 +495,8 @@ body{
 .SingleAuthorBox .Stars li{
     display: inline;
 }
+
+/* Login */
 @media all and (min-width: 480px) {
     .Login {
       padding: 60px 0;
@@ -571,6 +577,10 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+.search:focus{
+    outline: none;
+}
   .bookCat{
     margin-top: 20px;
     text-align: center;
@@ -589,6 +599,10 @@ body{
   }
   .links:hover{
     color: var(--mainPink);
+    background-color: var(--mainLightGrey);
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 15px;
   }
   .Fav{
       text-align: center;
@@ -604,6 +618,17 @@ body{
 
   .titleFav{
       margin-bottom: 50px;
+  }
+  .SignupLink{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--mainBlue);
+    text-decoration: none;
+    transition: .4s;
+  }
+  .SignupLink:hover{
+    color: var(--mainDarkGrey);
+    transition: .4s;
   }
 
 /* About Us Page */
