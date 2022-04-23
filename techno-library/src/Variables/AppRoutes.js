@@ -12,6 +12,7 @@ import AboutUs from "../Pages/WebsiteInfo/AboutUs";
 import ContactUs from "../Pages/WebsiteInfo/ContactUs";
 import UploadBook from "../Pages/Book/UploadBook";
 import PersonalInfo from "../Pages/User/PersonalInfo";
+import AuthorDetails from "../Pages/Author/AuthorDetails";
 
 
 const AppRoutes = () => {
@@ -22,6 +23,7 @@ const AppRoutes = () => {
           <Route exact path="/Home" element={<Home />} />
           <Route exact path='/BookDetails' element={<BookDetails/>} />
           <Route exact path="/Authors" element={<Authors />} />
+          <Route exact path="/AuthorDetails" element={<AuthorDetails />} />
           <Route exact path="/Login" element={<Login />} />
           <Route exact path="/Signup" element={<SignUp />} />
           <Route exact path="/Categories" element={<Categories />} />

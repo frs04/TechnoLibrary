@@ -24,11 +24,15 @@ const Authors = () => {
                         <div className='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4'>
                             <div className='card SingleAuthorBox'>
                                 <div className='card-img-top'>
-                                    <img src='./images/authors.jpg' alt='author'/>
+                                    <Link to="/AuthorDetails">
+                                        <img src='./images/authors.jpg' alt='author'/>
+                                    </Link>
                                 </div>
                                 <div className='card-body text-center'>
                                     <div className='row'>
-                                        <label className='Name'>Author Name</label>
+                                        <Link to="/AuthorDetails">
+                                            <label className='Name'>Author Name</label>
+                                        </Link>
                                     </div>
                                     <div className='row'>
                                         <ul className='Stars'>
@@ -45,11 +49,15 @@ const Authors = () => {
                         <div className='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4'>
                             <div className='card SingleAuthorBox'>
                                 <div className='card-img-top'>
-                                    <img src='./images/authors.jpg' alt='author'/>
+                                    <Link to="/AuthorDetails">
+                                        <img src='./images/authors.jpg' alt='author'/>
+                                    </Link>
                                 </div>
                                 <div className='card-body text-center'>
                                     <div className='row'>
-                                        <label className='Name'>Author Name</label>
+                                        <Link to="/AuthorDetails">
+                                            <label className='Name'>Author Name</label>
+                                        </Link>
                                     </div>
                                     <div className='row'>
                                         <ul className='Stars'>
@@ -66,11 +74,15 @@ const Authors = () => {
                         <div className='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4'>
                             <div className='card SingleAuthorBox'>
                                 <div className='card-img-top'>
-                                    <img src='./images/authors.jpg' alt='author'/>
+                                    <Link to="/AuthorDetails">
+                                        <img src='./images/authors.jpg' alt='author'/>
+                                    </Link>
                                 </div>
                                 <div className='card-body text-center'>
                                     <div className='row'>
-                                        <label className='Name'>Author Name</label>
+                                        <Link to="/AuthorDetails">
+                                            <label className='Name'>Author Name</label>
+                                        </Link>
                                     </div>
                                     <div className='row'>
                                         <ul className='Stars'>
@@ -87,11 +99,15 @@ const Authors = () => {
                         <div className='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4'>
                             <div className='card SingleAuthorBox'>
                                 <div className='card-img-top'>
-                                    <img src='./images/authors.jpg' alt='author'/>
+                                    <Link to="/AuthorDetails">
+                                        <img src='./images/authors.jpg' alt='author'/>
+                                    </Link>
                                 </div>
                                 <div className='card-body text-center'>
                                     <div className='row'>
-                                        <label className='Name'>Author Name</label>
+                                        <Link to="/AuthorDetails">
+                                            <label className='Name'>Author Name</label>
+                                        </Link>
                                     </div>
                                     <div className='row'>
                                         <ul className='Stars'>

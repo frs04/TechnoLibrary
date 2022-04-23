@@ -219,6 +219,10 @@ body{
     width: 220px;
     border: 0!important;
 }
+.HomeOwlStyle .card-body{
+    padding: 0;
+    padding-top: 20px!important;
+}
 
 .HomeOwlStyle .Category{
     font-size: 15px;
@@ -233,8 +237,9 @@ body{
     font-weight: 600;
 }
 
-.HomeOwlStyle .Stars li{
+.Stars li{
     display: inline;
+    color: #ffb400;
 }
 
 .HomeOwlStyle .Free{
@@ -490,11 +495,9 @@ body{
     font-size: 16px;
     font-weight: 600;
     color: var(--mainDarkGrey);
+    cursor: pointer;
 }
 
-.SingleAuthorBox .Stars li{
-    display: inline;
-}
 
 /* Login */
 @media all and (min-width: 480px) {
@@ -590,15 +593,15 @@ body{
     width: 900px;
     margin-left: 20px;
   }
-  th{
+  .tableCat th{
     color: var(--mainBlue);
   }
-  .links{
+  .tableCat .links{
     text-decoration: none;
     color: black;
   }
   .links:hover{
-    color: var(--mainPink);
+    /* color: var(--mainPink); */
     background-color: var(--mainLightGrey);
     font-weight: 600;
     padding: 5px 10px;
@@ -881,4 +884,39 @@ body{
 .SingleTab .Stars .Number{
     color: var(--mainBlack);
     font-size: 15px;
+}
+
+/* Author Details */
+
+.AuthorDetails .Profile img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 575.98px) { 
+    .AuthorDetails .Profile{
+       text-align: center;
+       margin-bottom: 10px;
+    }
+    .AuthorDetails .Info{
+        text-align: center;
+    }
+ }
+
+.AuthorDetails .Info{
+    margin: auto 0;
+}
+
+.AuthorDetails .Info .Name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.AuthorDetails .Info .Book{
+    font-size: 14px;
+}
+
+.AuthorDetails .Info span{
+    color: var(--mainBlue);
 }
