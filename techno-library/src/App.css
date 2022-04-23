@@ -491,6 +491,120 @@ body{
 .SingleAuthorBox .Stars li{
     display: inline;
 }
+@media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0;
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }
+  .Login {
+    background-color: var(--mainLightGrey);
+  }
+  .cardlogin {
+      height: 400px;
+      padding-top: 40px;
+      width: 100px;
+  }
+  .logintitle {
+    text-align: center;
+  }
+  .btn {
+    margin-top: 20px;
+  }
+  .signup {
+    background-color: var(--mainLightGrey);
+  
+  }
+  @media all and (min-width: 480px) {
+    .signup {
+      padding: 60px 0;
+    }
+  
+    .signup form {
+      position: relative;
+      margin: 0 auto;
+      padding: 20px 20px 20px;
+      width: 310px;
+  
+    }
+  }
+  .cardsignup{
+      height: 500px;
+      padding-top: 10px;
+      width: 100px;
+  }
+  .categ{
+    background-color: var(--mainLightGrey);
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .category{
+    background-color: white;
+    position: relative;
+      margin: 0 auto;
+      padding: 20px 20px 20px;
+      width: 1000px;
+      height: 500px;
+      border-radius: 20px;
+  }
+  .the-box{
+    padding: 30px;
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #dadde1;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  
+  }
+  .search{
+    width: 900px;
+    margin-left: 20px;
+    border-top:none;
+    border-right: none;
+    border-left: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .bookCat{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--mainPink);
+  }
+  .tableCat{
+    width: 900px;
+    margin-left: 20px;
+  }
+  th{
+    color: var(--mainBlue);
+  }
+  .links{
+    text-decoration: none;
+    color: black;
+  }
+  .links:hover{
+    color: var(--mainPink);
+  }
+  .Fav{
+      text-align: center;
+      padding: 50px;
+  }
+  .removeBtn{
+      padding: 10px;
+      border: none;
+      border-radius: 25px;
+      color: white;
+      background-color: var(--mainPink);
+  }
+
+  .titleFav{
+      margin-bottom: 50px;
+  }
 
 /* Book Details */
 

@@ -19,10 +19,18 @@ const Header = () => {
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
+
+                    <Nav.Link href="/Home"> <BsHouseDoor/> Home</Nav.Link>
+                      <Nav.Link href="/Categories" src='../Pages/Categories.js'><BsDiagram3/> Book Categories</Nav.Link>
+                      <Nav.Link href="/Authors" src="../Pages/Authors.js"><BsPeople/> Authors</Nav.Link>
+                      <Nav.Link href="/Menu"><BsList/> Menu</Nav.Link>
+
+
                       <Nav.Link href="/"> <BsHouseDoor/> Home</Nav.Link>
                       <Nav.Link href="#2"><BsDiagram3/> Book Categories</Nav.Link>
                       <Nav.Link href="/Authors"><BsPeople/> Authors</Nav.Link>
                       <Nav.Link href="#4"><BsList/> Menu</Nav.Link>
+
                     </Nav>
                   </Navbar.Collapse>
                 </Container>
