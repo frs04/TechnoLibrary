@@ -1,17 +1,17 @@
 
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Authors from "../Pages/Authors";
+import Authors from "../Pages/Author/Authors";
 import Home from "../Pages/Home";
-import Categories from "../Pages/Categories";
-import Login from "../Pages/Login";
-import SignUp from "../Pages/SignUp";
-import Favorite from "../Pages/Favorite";
-import BookDetails from '../Pages/BookDetails';
-import AboutUs from "../Pages/AboutUs";
-import ContactUs from "../Pages/ContactUs";
-import PersonalInfo from "../Pages/PersonalInfo";
-import UploadBook from "../Pages/UploadBook";
+import Categories from "../Pages/Book/Categories";
+import Login from "../Pages/Authentication/Login";
+import SignUp from "../Pages/Authentication/SignUp";
+import Favorite from "../Pages/User/Favorite";
+import BookDetails from '../Pages/Book/BookDetails';
+import AboutUs from "../Pages/WebsiteInfo/AboutUs";
+import ContactUs from "../Pages/WebsiteInfo/ContactUs";
+import UploadBook from "../Pages/Book/UploadBook";
+import PersonalInfo from "../Pages/User/PersonalInfo";
 
 
 const AppRoutes = () => {
