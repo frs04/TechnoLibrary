@@ -606,6 +606,177 @@ body{
       margin-bottom: 50px;
   }
 
+/* About Us Page */
+
+#navlink4 {
+    background-color: #38B5FF;
+    height: 40px;
+    
+}
+
+#navlink4 a {
+    text-decoration: none;
+    color: white;
+}
+
+#navlink4 p {
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+
+
+#titlewrapper {
+    display: inline-block;
+    margin: auto;
+}
+
+#logowrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#logopng {
+    width: 150px;
+    height: 150px;
+}
+
+
+#centerwrapper {
+    text-align: center;
+}
+
+.imgs {
+    width: 50px;
+    height: 50px ;
+    border-radius: 50px;
+}
+
+/* ContactUs page */
+
+#navlink3 {
+    background-color: #38B5FF;
+    height: 40px
+    
+}
+
+#navlink3 a {
+    text-decoration: none;
+    color: white;
+}
+
+#navlink3 p {
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+
+#form3 {
+    margin-left: 10%;
+}
+
+#form3 input, textarea {
+    border-radius: 5px;
+    border-width: thin;
+}
+
+#form3 input[type=text], textarea{
+    width: 40%;
+    border: 0;
+    background-color: #EAEAEA;
+}
+
+#cupsbmt {
+    width: 80px;
+    background-color: #38B5FF;
+    color: white;
+    border: 0;
+}
+
+#cupsbmt, #cupfu {
+    border-radius: 0px !important;
+}
+
+/* Personal Info Page */
+#navlink2 {
+    background-color: #38B5FF;
+    height: 40px;
+    
+}
+
+#navlink2 a {
+    text-decoration: none;
+    color: white;
+}
+
+#navlink2 p {
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+
+#form2 input, textarea {
+    border-radius: 5px;
+    border-width: thin;
+    border: 0;
+    background-color: #EAEAEA;
+}
+
+#form2 input[type=text], textarea{
+    width: 40%;   
+}
+
+#savebtn {
+    background-color: #38B5FF !important;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0px !important;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100px;
+    border: 0;
+    float: right;
+    margin-right: 30px;
+}
+
+/* UploadBook Page */
+#navlink {
+    background-color: #38B5FF;
+    height: 40px   
+}
+
+#navlink a {
+    text-decoration: none;
+    color: white;
+}
+
+#navlink p {
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+
+#form1 input, textarea {
+    border-radius: 5px;
+    border-width: thin;
+    border: 0;
+    background-color: #EAEAEA;
+    width: 40%;
+}
+
+#uploadbtnlabel, #submitbtn {
+    background-color: #38B5FF !important;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0px !important;
+    cursor: pointer;
+    
+} 
+
+#submitbtn {
+    margin-left: 15%;
+    width: 80px !important;
+
 /* Book Details */
 
 .TopBox{
