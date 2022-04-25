@@ -27,22 +27,22 @@ const UploadBook = () => {
 
             <form action="#" className="ml-5" id="form1">
                 <div className="form-group">
-                    <label for="name" style="margin-right: 65px;">Name</label>
+                    <label for="name" className='me-3'>Name</label>
                     <input type="text" name="" id="name" />
                 </div>
 
                 <div className="form-group">
-                    <label for="author" style="margin-right: 60px;">Author</label>
+                    <label for="author" className='me-3'>Author</label>
                     <input type="text" name="" id="author" />
                 </div>
 
                 <div className="form-group">
-                    <label for="ctg" class="text-center" style="margin-right: 45px;">Category</label>
+                    <label for="ctg" class="text-center" className='me-3'>Category</label>
                     <input type="text" name="" id="ctg" />
                 </div>
 
                 <div className="form-group">
-                    <label for="dscrp" style="margin-right: 30px;">Description</label>
+                    <label for="dscrp"className='me-3'>Description</label>
                     <textarea name="" id="dscrp" cols="30" rows="4"></textarea>
                 </div>
 
