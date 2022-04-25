@@ -767,6 +767,26 @@ body{
     margin-right: 30px;
 }
 
+.rghtmrgn {
+    margin-right: 50px;
+}
+
+#emllbl {
+    margin-right: 86px;
+}
+
+#passlbl {
+    margin-right: 56px;
+}
+
+#newpasslbl {
+    margin-right: 20px;
+}
+
+#datelbl {
+    margin-right: 90px;
+}
+
 /* UploadBook Page */
 #navlink {
     background-color: #38B5FF;
