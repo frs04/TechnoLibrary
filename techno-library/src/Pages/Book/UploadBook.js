@@ -12,7 +12,7 @@ const UploadBook = () => {
             <div id="navlink" className="bg">
                 <p>
                     <a href="#">Home</a> /
-                    <a href="#">Upload Book</a>
+                    <a href="#"> Upload Book</a>
                 </p>
             </div>
 
@@ -27,22 +27,22 @@ const UploadBook = () => {
 
             <form action="#" className="ml-5" id="form1">
                 <div className="form-group">
-                    <label for="name" className='me-3'>Name</label>
+                    <label for="name" id='namelbl' >Name</label>
                     <input type="text" name="" id="name" />
                 </div>
 
                 <div className="form-group">
-                    <label for="author" className='me-3'>Author</label>
+                    <label for="author" id='authourlbl' >Author</label>
                     <input type="text" name="" id="author" />
                 </div>
 
                 <div className="form-group">
-                    <label for="ctg" class="text-center" className='me-3'>Category</label>
+                    <label for="ctg" className='text-center' id='ctglbl' >Category</label>
                     <input type="text" name="" id="ctg" />
                 </div>
 
                 <div className="form-group">
-                    <label for="dscrp"className='me-3'>Description</label>
+                    <label for="dscrp" id='dsclbl' >Description</label>
                     <textarea name="" id="dscrp" cols="30" rows="4"></textarea>
                 </div>
 

@@ -10,6 +10,7 @@ const PersonalInfo = () => {
   return (  
 
     <div>
+
         <div id="navlink2">
             <p>
                 <a href="#">Home</a> / 
@@ -61,6 +62,10 @@ const PersonalInfo = () => {
             <div className="form-group">
                 <input type="submit" value="Save" name="" id="savebtn" />
             </div>
+
+            <br />
+            <br />
+            <br />
             
         </form>
 
