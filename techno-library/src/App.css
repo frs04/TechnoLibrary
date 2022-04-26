@@ -665,8 +665,8 @@ body{
 }
 
 #logopng {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 80px;
 }
 
 
@@ -772,19 +772,19 @@ body{
 }
 
 #emllbl {
-    margin-right: 86px;
+    margin-right: 90px;
 }
 
 #passlbl {
-    margin-right: 56px;
+    margin-right: 58px;
 }
 
 #newpasslbl {
-    margin-right: 20px;
+    margin-right: 18px;
 }
 
 #datelbl {
-    margin-right: 90px;
+    margin-right: 100px;
 }
 
 /* UploadBook Page */
@@ -825,6 +825,24 @@ body{
     margin-left: 15%;
     width: 80px !important;
 }
+
+#namelbl {
+    margin-right: 50px;
+}
+
+#authourlbl {
+    margin-right: 45px;
+}
+
+#ctglbl {
+    margin-right: 28px;
+}
+
+#dsclbl {
+    margin-right: 8px;
+}
+
+
 /* Book Details */
 
 .TopBox{

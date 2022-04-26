@@ -13,8 +13,8 @@ const ContactUs = () => {
         <div id="navlink3">
             <p>
                 <a href="#">Home</a> / 
-                <a href="#">Your Account</a> /
-                <a href="#">Contact Us</a>
+                <a href="#"> Your Account</a> /
+                <a href="#"> Contact Us</a>
             </p>
         </div>
 
@@ -27,7 +27,7 @@ const ContactUs = () => {
         <br />
         <br />
 
-        <h5 classname='ml-3 font-weight-bold text-center'>Send a Request</h5>
+        <h5 className='ml-3 font-weight-bold text-center'>Send a Request</h5>
         <br />
 
         <form action="#" id="form3">

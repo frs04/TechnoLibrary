@@ -13,8 +13,8 @@ const AboutUs = () => {
         <div id="navlink4">
             <p>
                 <a href="#">Home</a> / 
-                <a href="#">Your Account</a> /
-                <a href="#">About Us</a>
+                <a href="#"> Your Account</a> /
+                <a href="#"> About Us</a>
             </p>
         </div>
 
@@ -74,6 +74,10 @@ const AboutUs = () => {
                     <div id="logowrapper">
                         <img src='./images/mhmd.jpeg' alt="" className='imgs' />
                     </div>
+
+                    <br />
+                    <br />
+
 
                 </div>
     
