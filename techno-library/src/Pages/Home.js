@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React,{useEffect, useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
@@ -7,8 +7,9 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import {AiFillStar, AiOutlineStar, AiFillHeart, AiOutlineEye} from 'react-icons/ai';
 import {BsPersonCircle} from 'react-icons/bs';
 import {Tabs, Tab} from 'react-bootstrap';
-
+import { variables } from '../Variables/Variables';
 const Home = () => {
+  const [books, setBooks] = useState([]);
   const owlOptions = {
     margin: 5,
     responsiveClass: true,
@@ -49,9 +50,29 @@ const Home = () => {
     },
   };
 
+  function GetBooks() {
+    fetch(variables.API_URL + "Book/GetBooks", {
+        method: "GET",
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": variables.API_URL,
+        },
+    })
+    .then((Response) => {
+        if (Response.ok) return Response.json();
+        else throw Error("Did Not Receive expected data");
+    })
+    .then((Result) => {
+        setBooks(Result)
+    })
+}
+
   useEffect(() => {
-    document.title = "Techno - Home"
+    document.title = "Techno - Home";
+    GetBooks();
   }, [])
+  console.log(books)
   
   return (
     <div className='container-fluid p-0'>

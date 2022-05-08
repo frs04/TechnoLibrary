@@ -44,9 +44,9 @@ const Login = () => {
                 <div className="row">
                   <label>You don't have an account? <Link to="/SignUp" className="SignupLink">SignUp</Link></label>
                 </div>
-              <Button className="btn btn-primary" block size="lg" type="submit" disabled={!validateForm()}>
+              <button className="LoginBtn" block size="lg" type="submit" disabled={!validateForm()}>
                 Login
-              </Button>
+              </button>
             </Form>
           </Card.Body>
         </Card>

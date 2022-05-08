@@ -60,9 +60,9 @@ const SignUp = () => {
         <div className="row">
           <label>Already have an account? <Link to="/Login" className="SignupLink">Login</Link></label>
         </div>
-        <Button className="button btn-primary" block size="lg" type="submit">
+        <button className="LoginBtn" block size="lg" type="submit">
           SignUp
-        </Button>
+        </button>
       </Form>
       </Card.Body>
       </Card>

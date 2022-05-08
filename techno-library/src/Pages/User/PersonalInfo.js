@@ -8,15 +8,13 @@ const PersonalInfo = () => {
         document.title = "Techno - PersonalInfo"
       }, [])
   return (  
-
     <div>
-
-        <div id="navlink2">
-            <p>
-                <a href="#">Home</a> / 
-                <a href="#">Your Account</a> /
-                <a href="#"> Your Personal Information</a>
-            </p>
+        <div className='TopBox'>
+            <ul className='Path'>
+                <li><Link to="/">Home /</Link></li>
+                <li > Your Account /</li>
+                <li className='Name'> Your Personal Information</li>
+            </ul>
         </div>
 
         <br />
@@ -31,36 +29,44 @@ const PersonalInfo = () => {
         <form action="#" className='ml-5' id="form2">
 
             <div className='form-group'>
-                Social Title
-                <input type="radio" name="soctitle" id="" className='ml-5' /> Mr
-                <input type="radio" name="soctitle" id="" className='ml-3' /> Mrs.
+                <div className='row'>
+                    <div className='col-1'>
+                        <label className=''>Social Title</label>{/*  */}
+                    </div>
+                    <div className='col-10'>
+                        <input className='PersonalCheckbox ml-3' type="radio" name="soctitle"  /> 
+                        <label className='PersonalCheckboxLabel' >Mr</label>
+                        <input className='PersonalCheckbox ml-3' type="radio" name="soctitle"  />
+                        <label className='PersonalCheckboxLabel' >Mrs.</label> 
+                    </div>
+                </div>
             </div>
             <div className="form-group">
                 <label for="fname" className='rghtmrgn'>First Name</label>
-                <input type="text" name="" id="fname" />
+                <input className='PersonalInput' type="text" name="" id="fname" />
             </div>
             <div className="form-group">
                 <label for="lname" className='rghtmrgn'>Last Name</label>
-                <input type="text" name="" id="lname" />
+                <input className='PersonalInput' type="text" name="" id="lname" />
             </div>
             <div className="form-group">
                 <label for="eml" id='emllbl'>Email</label>
-                <input type="text" name="" id="eml" />
+                <input className='PersonalInput' type="text" name="" id="eml" />
             </div>
             <div className="form-group">
                 <label for="pass" id='passlbl'>Password</label>
-                <input type="text" name="" id="pass" />
+                <input className='PersonalInput' type="text" name="" id="pass" />
             </div>
             <div className="form-group">
                 <label for="newpass" id='newpasslbl'>New Password</label>
-                <input type="text" name="" id="newpass" />
+                <input className='PersonalInput' type="text" name="" id="newpass" />
             </div>
             <div className="form-group">
                 <label for="date" id='datelbl'>Date</label>
-                <input type="date" name="" id="date" />
+                <input className='PersonalInput' type="date" name="" id="date" />
             </div>
             <div className="form-group">
-                <input type="submit" value="Save" name="" id="savebtn" />
+                <input className='PersonalInput' type="submit" value="Save" name="" id="savebtn" />
             </div>
 
             <br />

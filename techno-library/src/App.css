@@ -521,8 +521,17 @@ body{
   .logintitle {
     text-align: center;
   }
-  .btn {
+  .LoginBtn {
     margin-top: 20px;
+    background-color: var(--mainBlue);
+    color: var(--mainLightGrey);
+    padding: 10px 15px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .LoginBtn:hover{
+      opacity: .6;
   }
   .signup {
     background-color: var(--mainLightGrey);
@@ -617,6 +626,9 @@ body{
       border-radius: 25px;
       color: white;
       background-color: var(--mainPink);
+  }
+  .removeBtn:hover{
+      opacity: .6;
   }
 
   .titleFav{
@@ -743,28 +755,59 @@ body{
     padding-top: 8px;
 }
 
-#form2 input, textarea {
+.PersonalInput, textarea{
+    width: 40%;
+    padding: 5px 15px;  
     border-radius: 5px;
-    border-width: thin;
-    border: 0;
-    background-color: #EAEAEA;
+    border: 1px solid var(--mainLightGrey);
+    background-color: #EAEAEA; 
+    transition: .3s;
 }
 
-#form2 input[type=text], textarea{
-    width: 40%;   
+.PersonalInput:focus{
+    outline: none;
+    border: 1px solid var(--mainBlue);
+    transition: .3s;
+}
+
+.PersonalCheckbox{
+	border-radius: 50%;
+	height: 20px;
+  	width: 20px;
+	appearance: none;
+	outline: 0;
+	cursor: pointer;
+	border: 1px solid var(--mainDarkGrey);
+	float: left;
+}
+
+.PersonalCheckbox:checked{
+	background-color: var(--mainBlue);
+	border: 4px double var(--mainLightGrey);
+}
+
+.PersonalCheckboxLabel{
+    margin-left: 10px;
+	font-size: 14px;
+	float: left;
+    height: 20px;
 }
 
 #savebtn {
     background-color: #38B5FF !important;
     color: white;
     padding: 0.5rem;
-    border-radius: 0px !important;
+    border-radius: 28px;
     cursor: pointer;
     margin-top: 1rem;
     width: 100px;
     border: 0;
     float: right;
     margin-right: 30px;
+}
+
+#savebtn:hover{
+    opacity: .6;
 }
 
 .rghtmrgn {
